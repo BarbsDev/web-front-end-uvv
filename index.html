@@ -2,47 +2,82 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Mundo em Rotas - Home</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <meta name="description" content="Mundo em Rotas: seu blog de viagens com dicas, roteiros e inspirações para destinos nacionais e internacionais."> <meta name="keywords" content="viagem, blog de viagem, destinos, roteiros, dicas, nacional, internacional"> <title>Mundo em Rotas - Dicas e Roteiros para suas Viagens</title> <link rel="stylesheet" href="style.css">
+    </head>
 <body>
     <header class="header-banner">
-        <h1>Mundo em Rotas</h1>
+        <div class="container-centralizado"> <h1>Mundo em Rotas</h1>
+            </div>
     </header>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="nacionais.html">Destinos Nacionais</a>
-        <a href="internacionais.html">Destinos Internacionais</a>
-        <a href="dicas.html">Dicas de Viagem</a>
-        <a href="contato.html">Contatos</a>
-    </nav>
-    <main>
-        <h2>Bem-vindo ao Mundo em Rotas!</h2>
-        <p>O nosso blog é dedicado a compartilhar dicas, roteiros e inspirações para quem ama explorar o mundo. Aqui você encontra desde destinos incríveis no Brasil até aventuras internacionais e orientações para aproveitar ao máximo suas viagens.</p>
-        
-        <div class="imagem-legenda">
-            <a href="nacionais.html">
-                <img src="imagens/nacionais.jpg" alt="Destinos Nacionais" class="img-destaque">
-            </a>
-            <p class="legenda">Destinos Nacionais: descubra lugares incríveis para conhecer no Brasil.</p>
-        </div>
-        
-        <div class="imagem-legenda">
-            <a href="internacionais.html">
-                <img src="imagens/internacionais.jpg" alt="Destinos Internacionais" class="img-destaque">
-            </a>
-            <p class="legenda">Destinos Internacionais: explore lugares fascinantes pelo mundo.</p>
-        </div>
 
-        <div class="imagem-legenda">
-            <a href="dicas.html">
-                <img src="imagens/dicas.jpg" alt="Dicas de Viagem" class="img-destaque">
-            </a>
-            <p class="legenda">Dicas de Viagem: tudo que você precisa saber para planejar suas aventuras.</p>
-        </div>
-    </main>
+    <nav>
+        <div class="container-centralizado nav-content"> <a href="index.html" class="nav-item active">Home</a> <a href="nacionais.html" class="nav-item">Destinos Nacionais</a>
+            <a href="internacionais.html" class="nav-item">Destinos Internacionais</a>
+            <a href="dicas.html" class="nav-item">Dicas de Viagem</a>
+            <a href="contato.html" class="nav-item">Contatos</a>
+            </div>
+    </nav>
+
+    <main>
+        <section class="hero-section"> <div class="container-centralizado hero-content">
+                <h2>Sua Próxima Aventura Começa Aqui!</h2> <p>Explore o mundo com dicas, roteiros e inspirações exclusivas do Mundo em Rotas.</p>
+                <a href="dicas.html" class="botao-cta">Planeje Sua Viagem Agora</a> </div>
+        </section>
+
+        <div class="container-centralizado"> <h2>Bem-vindo ao Mundo em Rotas!</h2> <p>O nosso blog é dedicado a compartilhar dicas, roteiros e inspirações para quem ama explorar o mundo. Aqui você encontra desde destinos incríveis no Brasil até aventuras internacionais e orientações para aproveitar ao máximo suas viagens.</p>
+            <div class="galeria-destaques"> <div class="imagem-legenda">
+                    <a href="nacionais.html">
+                        <img src="imagens/nacionais.jpg" alt="Destinos Nacionais: Cristo Redentor, Rio de Janeiro" class="img-destaque"> </a>
+                    <p class="legenda">Destinos Nacionais: descubra lugares incríveis para conhecer no Brasil.</p>
+                </div>
+
+                <div class="imagem-legenda">
+                    <a href="internacionais.html">
+                        <img src="imagens/internacionais.jpg" alt="Destinos Internacionais: Torre Eiffel, Paris" class="img-destaque">
+                    </a>
+                    <p class="legenda">Destinos Internacionais: explore lugares fascinantes pelo mundo.</p>
+                </div>
+
+                <div class="imagem-legenda">
+                    <a href="dicas.html">
+                        <img src="imagens/dicas.jpg" alt="Dicas de Viagem: Mapa, passaporte e câmera" class="img-destaque">
+                    </a>
+                    <p class="legenda">Dicas de Viagem: tudo que você precisa saber para planejar suas aventuras.</p>
+                </div>
+            </div> <section class="newsletter-section"> <h3>Pronto para sua próxima viagem?</h3>
+                <p>Receba as melhores dicas e roteiros exclusivos diretamente no seu e-mail!</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Seu melhor e-mail" aria-label="Endereço de e-mail para newsletter" required>
+                    <button type="submit" class="botao-cta secundario">Assinar Newsletter</button>
+                </form>
+            </section>
+
+        </div> </main>
+
     <footer>
-        <p>© 2025 Mundo em Rotas. Todos os direitos reservados.</p>
+        <div class="container-centralizado footer-content"> <p>&copy; <span id="currentYear"></span> Mundo em Rotas. Todos os direitos reservados.</p>
+            <div class="social-links"> <a href="#" aria-label="Facebook"><img src="imagens/icon-facebook.png" alt="Facebook"></a>
+                <a href="#" aria-label="Instagram"><img src="imagens/icon-instagram.png" alt="Instagram"></a>
+                <a href="#" aria-label="Twitter"><img src="imagens/icon-twitter.png" alt="Twitter"></a>
+            </div>
+        </div>
     </footer>
+
+    <script>
+        // Script para atualizar o ano no rodapé
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // Opcional: Script para menu hamburguer (se você adicionar o botão no HTML e estilizar no CSS)
+        // const menuToggle = document.querySelector('.menu-toggle');
+        // const navLinks = document.querySelectorAll('.nav-item'); // Ou a UL se você mudar nav para UL
+
+        // if (menuToggle) {
+        //     menuToggle.addEventListener('click', () => {
+        //         // Exemplo: toggle uma classe 'menu-open' na nav ou em um container da nav
+        //         document.querySelector('nav').classList.toggle('menu-open');
+        //         menuToggle.classList.toggle('open');
+        //     });
+        // }
+    </script>
 </body>
 </html>

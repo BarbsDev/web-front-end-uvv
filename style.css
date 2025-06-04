@@ -69,9 +69,22 @@ footer {
     text-align: center;
     font-size: 0.85em;
     color: #777;
+    background-color: #343a40;
     padding: 15px 0;
     border-top: 1px solid #ddd;
 }
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-content p {
+    margin-bottom: 0;
+}
+
 
 .button {
     background: #0288d1;
@@ -91,6 +104,12 @@ footer {
     text-align: center;
     max-width: 320px;
     margin: 0 auto 30px auto;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .imagem-legenda .legenda {
@@ -99,6 +118,22 @@ footer {
     margin-top: 8px;
     font-size: 0.9rem;
     line-height: 1.3;
+    padding: 15px;
+    text-align: center;
+    margin-bottom: 0;
+    
+}
+
+.imagem-legenda:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.imagem-legenda .img-destaque {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; 
+    display: block;
 }
 
 .header-banner {
@@ -118,4 +153,185 @@ footer {
     text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
     margin-bottom: 20px;
   }
-  
+
+
+.container-centralizado {
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 0 20px; 
+}
+
+.hero-section {
+    background: url('imagens/hero-background.jpg') no-repeat center center/cover; /* Imagem de fundo impactante */
+    color: #fff; /* Cor do texto branco */
+    text-align: center;
+    padding: 100px 20px; /* Espaçamento interno */
+    min-height: 400px; /* Altura mínima para o banner */
+    display: flex; /* Para centralizar o conteúdo verticalmente */
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.4); /* Escurece a imagem de fundo para melhor legibilidade do texto */
+    margin-bottom: 40px; /* Espaço abaixo do banner */
+}
+
+.hero-content h2 { /* Título do banner */
+    font-size: 3em; /* Tamanho maior para o título */
+    margin-bottom: 15px;
+    color: #fff; /* Certifica que é branco */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.6); /* Sombra para destaque */
+}
+
+.hero-content p { /* Parágrafo do banner */
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.botao-cta {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 5px; 
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.botao-cta:hover {
+    background-color: #0056b3; 
+    transform: translateY(-2px); 
+}
+
+.botao-cta.secundario {
+    background-color: #28a745;
+}
+
+.botao-cta.secundario:hover {
+    background-color: #218838;
+}
+
+
+.nav-item {
+    padding: 8px 15px; 
+}
+
+
+.galeria-destaques {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+.newsletter-section {
+    background-color: #f0f0f0;
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.newsletter-section h3 {
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+.newsletter-form {
+    display: flex;
+    justify-content: center;
+    max-width: 500px;
+    margin: 20px auto 0;
+}
+
+.newsletter-form input[type="email"] {
+    flex-grow: 1;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    font-size: 1em;
+}
+
+.newsletter-form .botao-cta { /* Usar a mesma classe de botão para consistência */
+    border-radius: 0 5px 5px 0;
+    margin-left: -1px; /* Para que a borda dos elementos se junte */
+}
+
+/* --- Rodapé --- */
+footer {
+    background-color: #343a40; /* Cor de fundo escura */
+    color: #fff;
+    padding: 30px 0;
+    font-size: 0.9em;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Permite que os itens quebrem linha em telas menores */
+}
+
+.footer-content p {
+    margin-bottom: 0; /* Remove margem padrão */
+}
+
+.social-links {
+    margin-top: 10px; /* Espaço para o rodapé em mobile */
+}
+
+.social-links a {
+    margin-left: 15px;
+    text-decoration: none;
+}
+
+.social-links img {
+    width: 28px; /* Tamanho dos ícones */
+    height: 28px;
+    vertical-align: middle; /* Alinha bem os ícones */
+    transition: transform 0.2s ease;
+}
+
+.social-links img:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .container-centralizado {
+        padding: 0 15px;
+    }
+
+    .hero-content h2 {
+        font-size: 2em; 
+    }
+
+    .hero-content p {
+        font-size: 1em;
+    }
+
+    .galeria-destaques {
+        grid-template-columns: 1fr; 
+    }
+
+    .newsletter-form {
+        flex-direction: column; 
+
+    .newsletter-form input[type="email"],
+    .newsletter-form .botao-cta {
+        width: 100%;
+        border-radius: 5px; 
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+}
+
+    .social-links {
+        margin-top: 15px;
+        margin-left: 0; 
+    }
+}
