@@ -68,23 +68,11 @@ footer {
     margin-top: 40px;
     text-align: center;
     font-size: 0.85em;
-    color: #777;
+    color: #fff;
     background-color: #343a40;
     padding: 15px 0;
     border-top: 1px solid #ddd;
 }
-
-.footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.footer-content p {
-    margin-bottom: 0;
-}
-
 
 .button {
     background: #0288d1;
@@ -257,31 +245,15 @@ footer {
     font-size: 1em;
 }
 
-.newsletter-form .botao-cta { 
+.newsletter-form .botao-cta {
     border-radius: 0 5px 5px 0;
-    margin-left: -1px; 
-}
-
-footer {
-    background-color: #343a40; 
-    color: #fff;
-    padding: 30px 0;
-    font-size: 0.9em;
-}
-
-.footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap; 
-}
-
-.footer-content p {
-    margin-bottom: 0; 
+    margin-left: -1px;
 }
 
 .social-links {
-    margin-top: 10px; 
+    margin-top: 10px;
+     background-color: #343a40;
+    color: #fff;
 }
 
 .social-links a {
