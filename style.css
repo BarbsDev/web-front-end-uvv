@@ -163,25 +163,25 @@ footer {
 
 .hero-section {
     background: url('imagens/hero-background.jpg') no-repeat center center/cover; /* Imagem de fundo impactante */
-    color: #fff; /* Cor do texto branco */
+    color: #fff;
     text-align: center;
-    padding: 100px 20px; /* Espaçamento interno */
-    min-height: 400px; /* Altura mínima para o banner */
-    display: flex; /* Para centralizar o conteúdo verticalmente */
+    padding: 100px 20px;
+    min-height: 400px;
+    display: flex; 
     align-items: center;
     justify-content: center;
-    box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.4); /* Escurece a imagem de fundo para melhor legibilidade do texto */
-    margin-bottom: 40px; /* Espaço abaixo do banner */
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.4); 
+    margin-bottom: 40px; 
 }
 
-.hero-content h2 { /* Título do banner */
-    font-size: 3em; /* Tamanho maior para o título */
+.hero-content h2 { 
+    font-size: 3em;
     margin-bottom: 15px;
-    color: #fff; /* Certifica que é branco */
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.6); /* Sombra para destaque */
+    color: #fff; 
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.6); 
 }
 
-.hero-content p { /* Parágrafo do banner */
+.hero-content p {
     font-size: 1.2em;
     margin-bottom: 30px;
     max-width: 800px;
@@ -257,14 +257,13 @@ footer {
     font-size: 1em;
 }
 
-.newsletter-form .botao-cta { /* Usar a mesma classe de botão para consistência */
+.newsletter-form .botao-cta { 
     border-radius: 0 5px 5px 0;
-    margin-left: -1px; /* Para que a borda dos elementos se junte */
+    margin-left: -1px; 
 }
 
-/* --- Rodapé --- */
 footer {
-    background-color: #343a40; /* Cor de fundo escura */
+    background-color: #343a40; 
     color: #fff;
     padding: 30px 0;
     font-size: 0.9em;
@@ -274,15 +273,15 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap; /* Permite que os itens quebrem linha em telas menores */
+    flex-wrap: wrap; 
 }
 
 .footer-content p {
-    margin-bottom: 0; /* Remove margem padrão */
+    margin-bottom: 0; 
 }
 
 .social-links {
-    margin-top: 10px; /* Espaço para o rodapé em mobile */
+    margin-top: 10px; 
 }
 
 .social-links a {
@@ -291,9 +290,9 @@ footer {
 }
 
 .social-links img {
-    width: 28px; /* Tamanho dos ícones */
+    width: 28px; 
     height: 28px;
-    vertical-align: middle; /* Alinha bem os ícones */
+    vertical-align: middle; 
     transition: transform 0.2s ease;
 }
 
